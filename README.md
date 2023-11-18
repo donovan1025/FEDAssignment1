@@ -17,3 +17,6 @@ MOBILE:
 3. Merchandise shop to buy clothes and albums
 4. Tour section showing upcoming tours and button to purchase tickets
 5. Social media links from menu
+
+
+WIREFRAME LINK FIGMA : https://www.figma.com/file/1WNqCu1J3fjcyTHKA2BKQH/FED-Assignment-1-Wireframe?type=design&node-id=0%3A1&mode=design&t=xGdqe0FNSB8DX3Da-1
