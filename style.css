@@ -22,3 +22,23 @@ ul{
 button{
     color:palevioletred
 }
+.navcolour{
+    background-color: blueviolet;
+    overflow: hidden;
+}
+.navlink{
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.navlink.hover{
+    background-color: black;
+    color:#f2f2f2
+}
+.navlink.active {
+    background-color: #04AA6D;
+    color: white;
+  }
