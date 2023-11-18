@@ -1,6 +1,6 @@
 h1{
     font-family: Verdana;
-    color:rgb(219, 163, 89)
+    color: darkorchid
 }
 
 h2{
@@ -17,8 +17,4 @@ h4{
 
 ul{
     color:darkorchid
-}
-
-img{
-    border-radius: 50%;
 }
