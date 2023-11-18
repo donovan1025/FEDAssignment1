@@ -1,6 +1,7 @@
 # FEDAssignment1
 This is my FED Assignment project.
 Project Theme : Coldplay Band Website
+The website is dedicated to fans who want to buy merch, buy upcoming concert tickets and see old photos and albums of the band
 What I'm going to create:
 
 DESKTOP:
