@@ -22,12 +22,16 @@ ul{
 button{
     color:palevioletred
 }
+nav{
+    font-size: larger;
+    font-family: 'Medium'
+}
 .navcolour{
     background-color: blueviolet;
     overflow: hidden;
 }
 .navlink{
-    float: left;
+    float:left ;
     color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
