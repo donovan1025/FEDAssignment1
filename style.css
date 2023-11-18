@@ -1,5 +1,5 @@
 h1{
-    font-family: Verdana;
+    font-family: Medium;
     color: darkorchid
 }
 
@@ -17,4 +17,8 @@ h4{
 
 ul{
     color:darkorchid
+}
+
+button{
+    color:palevioletred
 }
