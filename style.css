@@ -1,6 +1,7 @@
 h1{
     font-family: Medium;
-    color: darkorchid
+    color: darkorchid;
+    text-align: center;
 }
 
 h2{
@@ -14,35 +15,66 @@ h3{
 h4{
     color:pink
 }
-
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 ul{
-    color:darkorchid
+    color:darkorchid;
+    list-style: none;
+}
+.text-align-center{
+    text-align: center;
+}
+body{
+    background-color: pink;
 }
 
 button{
-    color:palevioletred
+    background-color:palevioletred;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 nav{
     font-size: larger;
-    font-family: 'Medium'
-}
-.navcolour{
-    background-color: blueviolet;
-    overflow: hidden;
-}
-.navlink{
-    float:left ;
-    color: #f2f2f2;
+    font-family: 'Work Sans',sans-serif;
     text-align: center;
-    padding: 14px 16px;
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+nav li{
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 23px;
+    position: relative;
+}
+nav a{
+    color:black;
     text-decoration: none;
-    font-size: 17px;
+    text-transform: uppercase;
+    font-size: 14px;
+    
 }
-.navlink.hover{
-    background-color: black;
-    color:#f2f2f2
+nav a:hover{
+        color:blueviolet
+    }
+nav a::before{
+    content: '';
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: blueviolet;
+    position: absolute;
+    top: 0;
+    width: 0%;
+
+    transition: all ease-in-out 200ms;
 }
-.navlink.active {
-    background-color: #04AA6D;
-    color: white;
-  }
+nav a:hover::before{
+    width: 100%;
+}
