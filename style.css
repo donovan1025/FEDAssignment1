@@ -1,6 +1,6 @@
 h1{
     font-family: Medium;
-    color: darkorchid;
+    color: #FFA2F3;
     text-align: center;
 }
 
@@ -29,7 +29,7 @@ ul{
     text-align: center;
 }
 body{
-    background-color: pink;
+    background-color: #9b51e0;
 }
 
 button{
@@ -47,12 +47,17 @@ nav ul{
     margin: 0;
     padding: 0;
     list-style: none;
+    border: 2cm;
+    background-color: #FFA2F3;
+    border-radius: 5cm;
 }
 nav li{
     display: inline-block;
     margin-left: 70px;
     padding-top: 23px;
     position: relative;
+    padding-bottom: 23px;
+    padding-right: 2cm;
 }
 nav a{
     color:black;
@@ -62,16 +67,15 @@ nav a{
     
 }
 nav a:hover{
-        color:blueviolet
+        color:white
     }
 nav a::before{
     content: '';
     display: block;
     height: 5px;
     width: 100%;
-    background-color: blueviolet;
-    position: absolute;
-    top: 0;
+    background-color: white;
+    position: relative;
     width: 0%;
 
     transition: all ease-in-out 200ms;
