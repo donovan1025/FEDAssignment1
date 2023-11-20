@@ -1,25 +1,38 @@
-h1{
+*{
     font-family: Medium;
-    color: #FFA2F3;
-    text-align: center;
 }
-
-h2{
-    color:red
+.logo{
+    float: left;
+    padding-left: 15px;
+    padding-top: 10px;
 }
-
-h3{
-    color:aqua
+.container{
+    padding-top: 2cm;
+    width: 100%;
+    height: 100%;
+    background-image: url("C:/Ngee Ann Poly/Sem 1.2/FED/Sky wallpaper.jpg");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
-
-h4{
-    color:pink
+.blur{
+    filter: blur(5px);
+    -webkit-filter:blur(5px);
 }
-img{
+p{
+    color: white;
+    font-size: 20px;
+}
+header{
+    padding-left: 10%;
+    background-color: black;
+}
+.MOTS{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 2cm;
+    padding-top: 2cm;
 }
 ul{
     color:darkorchid;
@@ -29,7 +42,8 @@ ul{
     text-align: center;
 }
 body{
-    background-color: #9b51e0;
+    /*background-color: #000966;*/
+    background-image: url("C:/Ngee Ann Poly/Sem 1.2/FED/Sky wallpaper.jpg");
 }
 
 button{
@@ -48,19 +62,18 @@ nav ul{
     padding: 0;
     list-style: none;
     border: 2cm;
-    background-color: #FFA2F3;
-    border-radius: 5cm;
+
+    
 }
 nav li{
     display: inline-block;
     margin-left: 70px;
     padding-top: 23px;
+    padding-bottom: 10px;
     position: relative;
-    padding-bottom: 23px;
-    padding-right: 2cm;
 }
 nav a{
-    color:black;
+    color:#FFA2F3;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 14px;
