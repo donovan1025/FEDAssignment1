@@ -10,7 +10,7 @@
     padding-top: 2cm;
     width: 100%;
     height: 100%;
-    background-image: url("C:/Ngee Ann Poly/Sem 1.2/FED/Sky wallpaper.jpg");
+    /*background-image: url("C:/Ngee Ann Poly/Sem 1.2/FED/Sky wallpaper.jpg");*/
     display: flex;
     align-items: center;
     justify-content: center;
@@ -26,7 +26,6 @@ p{
 }
 header{
     padding-left: 10%;
-    background-color: black;
 }
 .MOTS{
     display: block;
