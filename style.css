@@ -22,13 +22,6 @@ p{
     color: white;
     font-size: 20px;
 }
-.box {
-    display:inline-block;
-    width:300px;
-    height:200px;
-    background-image: url("C:/Ngee Ann Poly/Sem 1.2/FED/Sky wallpaper.jpg");
-    border:2px solid darkorchid;
-}
 header{
     padding-left: 10%;
 }
@@ -54,12 +47,15 @@ body{
     background-image: url("C:/Ngee Ann Poly/Sem 1.2/FED/Sky wallpaper.jpg");
 }
 
-button{
+.buybutton{
     background-color:palevioletred;
     display: block;
     margin-bottom: 10%;
     margin-left: auto;
     margin-right: auto;
+}
+.buybutton a:hover{
+    color: white;
 }
 nav{
     font-size: larger;
@@ -71,8 +67,6 @@ nav ul{
     padding: 0;
     list-style: none;
     border: 2cm;
-
-    
 }
 nav li{
     display: inline-block;
@@ -104,6 +98,19 @@ nav a::before{
 }
 nav a:hover::before{
     width: 100%;
+}
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    /* hides menu bar in desktop mode */
+    display: none;
+}
+#check{
+    display: none;
 }
 footer{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -173,14 +180,112 @@ footer{
     color:#24262b;
     background-color: grey;
 }
+.card-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+.card{
+    width: 325px;
+    background-color: palevioletred;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 4px 6px purple;
+    margin: 100px;
+}
+.card img {
+    width: 100%;
+    height: auto;
+}
+.card-content{
+    padding: 16px;
+}
+.card-content h3{
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+.card-content p{
+    color: white;
+    font-size: 15px;
+    line-height: 1.3;
+}
+.card-content .card-btn{
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #333;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 16px;
+    color: white;
+}
+.card-btn:hover{
+    background-color: white;
+    color:#333;
+}
+
+/* responsive screen */
+@media (max-width: 990px){
+    .checkbtn{
+        display: block;
+    }
+    nav ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #000966;
+        top: 80px;
+        /* hides navbar out of screen until menu icon clicked */
+        left: -100%;
+        text-align: center;
+        transition: all 0.5s;
+    }
+    nav ul li{
+        display:block;
+        margin: auto;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+        transition: all ease 0.3s;
+    }
+    nav a::before{
+        display: none;
+    }
+    nav a:hover{
+        background: none;
+        color: whitesmoke;
+        padding-left: 5px;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+@media (max-width:952px){
+    label.logo{
+        height: 40;
+        width: 240;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
 @media (max-width: 767px){
+    video{
+        width: 50%;
+    }
     .foot-col{
         width: 50%;
         margin-bottom:30px;
     }
 }
 @media (max-width: 574px){
+    video{
+        width: 100%;
+    }
     .foot-col{
         width: 100%;
-}
+    }
+    
 }

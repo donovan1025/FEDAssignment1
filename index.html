@@ -9,12 +9,19 @@
   <meta charset="UTF-8">
   <!--CSS style sheets-->
   <link rel="stylesheet" href="style.css" type="text/css">
+  <!-- For Social media Icons-->
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <!-- For Menu Bar Icon -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 
 <header>
   <img src="C:\Ngee Ann Poly\Sem 1.2\FED\Coldplay logo.png" alt = "logo" class = "logo" height="50" width="300">
   <nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
     <ul>
         <li><a href="#">Catalogue</a></li>
         <li><a href="#">Home</a></li>
@@ -41,8 +48,27 @@
   Out Now
   </p>
   <p>
-  <button>PURCHASE ALBUM</button>
+  <button class="buybutton"><a>PURCHASE ALBUM</a></button>
   </p>
+
+  <div class="card-container">
+    <div class="card">
+      <img src="https://eustore.coldplay.com/cdn/shop/products/COL-HOLIDAY-YOUTH-SWEATSHIRT.png?v=1666912874&width=360">
+      <div class="card-content">
+        <h3>Shop</h3>
+        <p>Latest tour merch just dropped! Shop Now.</p>
+        <a href="#" class="card-btn">Shop Now</a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="C:\Ngee Ann Poly\Sem 1.2\FED\Music_of_the_Spheres_World_Tour_Poster.png">
+      <div class="card-content">
+        <h3>Music Of The Spheres: Asia</h3>
+        <p>Tour dates released for Asia! Check it out and quickly grab your tickets.</p>
+        <a href="#" class="card-btn">Tours</a>
+      </div>
+    </div>
+  </div>
 </body>
 
 <footer>
