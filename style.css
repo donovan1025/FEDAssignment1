@@ -3,6 +3,14 @@
     margin: 0;
     box-sizing: border-box;
 }
+.text-align-center{
+    text-align: center;
+}
+p{
+    padding-top: 10px;
+    color: white;
+    font-size: 20px;
+}
 /* Main Page */
 .logo{
     overflow:hidden;
@@ -12,6 +20,7 @@
     padding-left: 15px;
     padding-top: 10px;
 }
+/* video album */
 .container{
     padding-top: 2cm;
     width: 100%;
@@ -20,20 +29,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-}
-p{
-    padding-top: 10px;
-    color: white;
-    font-size: 20px;
-}
-header{
-    padding-left: 10%;
-}
-.fixnavbar{
-    overflow: hidden;
-    position: fixed; /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
-    width: 100%;
 }
 .MOTS{
     display: block; 
@@ -44,13 +39,6 @@ header{
     margin-right: auto;
     margin-bottom: 50px;
     padding-top: 2cm;
-}
-ul{
-    color: white;
-    list-style: none;
-}
-.text-align-center{
-    text-align: center;
 }
 body{
     /*background-color: #000966;*/
@@ -66,6 +54,20 @@ body{
 }
 .buybutton a:hover{
     color: white;
+}
+/* header */
+header{
+    padding-left: 10%;
+}
+.fixnavbar{
+    overflow: hidden;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%;
+}
+ul{
+    color: white;
+    list-style: none;
 }
 nav{
     font-size: larger;
@@ -122,6 +124,7 @@ nav a:hover::before{
 #check{
     display: none;
 }
+/* footer */
 footer{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: black;
@@ -190,6 +193,7 @@ footer{
     color:#24262b;
     background-color: grey;
 }
+/* cards */
 .card-container{
     display: flex;
     justify-content: center;
