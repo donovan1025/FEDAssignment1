@@ -305,3 +305,11 @@ footer{
 }
 
 /* Merchandise */
+
+/* Set background */
+.bg{
+    background-image: none;
+    background-color: #000966;
+}
+
+
