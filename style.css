@@ -25,7 +25,7 @@ p{
     padding-top: 2cm;
     width: 100%;
     height: 100%;
-    background-image: url("C:/Ngee Ann Poly/Sem 1.2/FED/Sky wallpaper.jpg");
+    background-image: url("C:/Ngee Ann Poly/Sem 1.2/FED/FED_Assignment1/FEDAssignment1/Images/Sky wallpaper.jpg");
     display: flex;
     align-items: center;
     justify-content: center;
@@ -42,7 +42,7 @@ p{
 }
 body{
     /*background-color: #000966;*/
-    background-image: url("C:/Ngee Ann Poly/Sem 1.2/FED/Sky wallpaper.jpg");
+    background-image: url("C:/Ngee Ann Poly/Sem 1.2/FED/FED_Assignment1/FEDAssignment1/Images/Sky wallpaper.jpg");
 }
 
 .buybutton{
@@ -58,6 +58,7 @@ body{
 /* header */
 header{
     padding-left: 10%;
+    margin-bottom: 70px;
 }
 .fixnavbar{
     overflow: hidden;
@@ -310,6 +311,19 @@ footer{
 .bg{
     background-image: none;
     background-color: #000966;
+    background-size: cover;
 }
 
+/* Banner */
+section{
+    padding: 2rem 9%;
+}
 
+.banner{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background: url("C:/Ngee Ann Poly/Sem 1.2/FED/FED_Assignment1/FEDAssignment1/Images/Coldplay, A Head Full of Dreams ‘one week review’.jpeg");
+    background-size: cover;
+    background-position: center;
+}
