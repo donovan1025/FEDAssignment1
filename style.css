@@ -333,6 +333,7 @@ footer{
 .banner-text{
     padding-top: 50px;
     margin-left: 50px;
+    
 }
 .banner-text h2{
     letter-spacing: 10px;
@@ -366,10 +367,12 @@ footer{
 /* Shop */
 .shop-title{
     color: #FFA2F3;
-    font-size: 30px
+    font-size: 30px;
+    margin-left: -200px;
 }
 .icon-cart{
     color: #FFA2F3;
+    margin-right: -250px;
 }
 .shop-container{
     width: 1000px;
@@ -503,4 +506,15 @@ body.showcart .shop-container{
 }
 .listcart::-webkit-scrollbar{
     width: 0;
+}
+
+/* Responsive Screen - Merchandise */
+@media (max-width: 636px){
+    .banner-text h3{
+        font-size: 70px;
+    }
+    .banner-text{
+        padding-top: 30px;
+        text-align: center;
+    }
 }
