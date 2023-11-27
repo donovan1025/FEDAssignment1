@@ -317,7 +317,7 @@ footer{
 /* Banner */
 .banner-container{
     width: 100%;
-    height: 100vh;
+    height: 50vh;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .banner{
@@ -337,7 +337,7 @@ footer{
 .banner-text h2{
     letter-spacing: 10px;
     font-weight: bold;
-    font-size: 25px;
+    font-size: 25px ;
     color: #FFA2F3;  
 }
 .banner-text h3{
@@ -366,6 +366,7 @@ footer{
 /* Shop */
 .shop-title{
     color: #FFA2F3;
+    font-size: 30px
 }
 .icon-cart{
     color: #FFA2F3;
@@ -376,6 +377,7 @@ footer{
     margin: auto;
     text-align: center;
     padding-top: 10px;
+    transform: transform 0.5s; /* for open shop cart */
 }
 svg{
     width: 30px;
@@ -433,4 +435,72 @@ svg{
     margin-top: 10px;
     border: none;
     cursor: pointer;
+}
+/* Shop Cart */
+.cartTab{
+    width: 400px;
+    background-color: grey;
+    color: #FFA2F3;
+    position: fixed;
+    inset: 0 -400px 0 auto; /* -400px to hide cart by default */
+    display: grid;
+    grid-template-rows: 70px 1fr 70px;
+    transition: 0.5s; /* for open shop cart */
+}
+body.showcart .cartTab{
+    inset: 0 0 0 auto;
+}
+body.showcart .shop-container{
+    transform: translateX(-250px);
+}
+.cartTab h1{
+    padding: 20px;
+    margin: 0;
+    font-weight: 300;
+}
+.cartTab .cartbtn{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.cartTab .cartbtn button{
+    background-color: #E8BC0E;
+    border: none;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+}
+.cartTab .cartbtn .close{
+    background-color: azure;
+}
+.cartTab .listcart .item img{
+    width: 100%;
+}
+.cartTab .listcart .item{
+    display: grid;
+    grid-template-columns: 70px 150px 50px 1fr;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+}
+.listcart .quantity span{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: azure;
+    color: #555;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.listcart .quantity span:nth-child(2){
+    background-color: transparent;
+    color: #eee;
+}
+.listcart .item:nth-child(even){
+    background-color: #eee1; /* every even num background colour changes */
+}
+.listcart{
+    overflow: auto; /* preserve frame when cart list gets too long */
+}
+.listcart::-webkit-scrollbar{
+    width: 0;
 }
