@@ -9,6 +9,7 @@
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <!-- For Menu Bar Icon -->
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script> <!--Trash can icon-->
 
 
 </head>
@@ -29,82 +30,47 @@
 </header>
 <!--Banner-->
 <body class="bg">
+  <section class="hidden">
     <div class="banner-container">
       <div class="banner">
           <div class="banner-text">
             <h2> The Coldplay Shop </h2>
             <h3> MOTS Merch </h3>
             <h3> Out Now </h3>
-            <button id="bannerbtn">SHOP NOW</button>
+            <button id="bannerbtn"><a href="#linkshop">SHOP NOW</a></button>
           </div>
       </div>
     </div>
+  </section>
 </body>
 
-<body class="">
-  <div class="shop-container">
-    <section class="shop-align">
-      <div class="shop-title">MERCHANDISE</div>
-      <div class="icon-cart"> <!-- cart icon from flowbite.com -->
-        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 20">
-          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 15a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm0 0h8m-8 0-1-4m9 4a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-9-4h10l2-7H3m2 7L3 4m0 0-.792-3H1"/>
-        </svg>
-        <span>0</span> <!--Cart Count-->
+<body>
+  <section class="hidden">
+      <div class="header">
+          <p class="shop-title">MERCHANDISE</p>
+          <div class="cart"><i class="fa-solid fa-cart-shopping"></i><p id="count">0</p></div>
       </div>
-    </section>
-    
-    <div class="listproduct">
-      <div class="item">
-        <img src="C:\Ngee Ann Poly\Sem 1.2\FED\FED_Assignment1\FEDAssignment1\Images\Coldplay sweatshirt.webp" alt="sweatshirt">
-        <h2>Holiday Crewneck Sweatshirt</h2>
-        <div class="itemprice">$52.00</div>
-        <button class="addcart">
-          Add To Cart
-        </button>
+      <div class="listcart-container" id="linkshop">
+          <div id="root"></div>
+          <div class="sidebar">
+              <div class="head"><p>My Cart</p></div>
+              <div id="cartItem">Your cart is empty</div>
+              <div class="foot">
+                  <h3>Total</h3>
+                  <h2 id="total">$ 0.00</h2>
+              </div>
+              <div class="cartbtn">
+              <button class="close">CLOSE</button>
+              <button class="checkOut">CHECKOUT</button>
+              </div>
+          </div>
       </div>
-    </div>
-  </div>
-
-  <div class="cartTab">
-    <h1> Shopping Cart </h1>
-    <div class="listcart">
-      <div class="item">
-        <div class="image">
-          <img src="C:\Ngee Ann Poly\Sem 1.2\FED\FED_Assignment1\FEDAssignment1\Images\Coldplay sweatshirt.webp">
-        </div>
-        <div class="name">
-          Sweatshirt
-        </div>
-        <div class="totalprice">
-          $52.00
-        </div>
-        <div class="quantity">
-          <span class="minus"><</span>
-          <span>1</span>
-          <span class="plus">></span>
-        </div>
-      </div>
-    </div>
-    <div class="cartbtn">
-      <button class="close">CLOSE</button>
-      <button class="checkout">Check Out</button>
-    </div>
-  </div>
-
-<script src="shop.js"></script>
+  </section>
+  <script src="shop.js"></script>
 </body>
 
 
-<body class="bg">
-
-
-  </div>
-
-    
-</body>
-
-
-<footer>
+<footer class="merchbg">
     <div class = "footcontainer">
       <div class="foot-row">
         <div class="foot-col">
