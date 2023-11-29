@@ -34,6 +34,7 @@ p{
     float: left;
     padding-left: 15px;
     padding-top: 10px;
+    z-index: 100;
 }
 /* video album */
 .container{
@@ -89,6 +90,7 @@ nav{
     font-size: larger;
     font-family: 'Work Sans',sans-serif;
     text-align: center;
+    z-index: 100;
 }
 nav ul{
     margin: 0;
