@@ -17,9 +17,6 @@ hiddenElements.forEach((el) => observer.observe(el));
 
 
 
-
-
-
 // open and close cart list
 let iconcart = document.querySelector('.fa-solid.fa-cart-shopping');
 let closeCart = document.querySelector('.close')

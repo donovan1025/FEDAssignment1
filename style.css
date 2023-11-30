@@ -44,7 +44,7 @@ p{
     padding-top: 2cm;
     width: 100%;
     height: 100%;
-    background-image: url("C:/Ngee Ann Poly/Sem 1.2/FED/FED_Assignment1/FEDAssignment1/Images/Sky wallpaper.jpg");
+    background-image: url("Images/Sky wallpaper.jpg");
     display: flex;
     align-items: center;
     justify-content: center;
@@ -150,6 +150,7 @@ footer{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: black;
     padding: 70px 0;
+    bottom: 0;
 }
 .footcontainer{
     max-width: 1170px;
@@ -339,11 +340,12 @@ footer{
     width: 100%;
     height: 50vh;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flexbox;
 }
 .banner{
     width: 100%;
     height: 40vh;
-    background-image: url("C:/Ngee Ann Poly/Sem 1.2/FED/FED_Assignment1/FEDAssignment1/Images/Coldplay Banner.png");
+    background-image: url("Images/Coldplay Banner.png");
     background-size: cover;
     background-position: 69%;
     border-radius: 10px;
@@ -576,5 +578,109 @@ body.showcart .sidebar{
     }
     #root{
         grid-template-columns: repeat(1,1fr);
+    }
+}
+
+/* Catalogue */
+
+/* top banner */
+.banner-catalogue{
+    width: 100%;
+    height: 55vh;
+    background-image: url("Images/CP-CatBanner.jpg");
+    background-size: cover;
+    background-position: 69%;
+    border-radius: 10px;
+    margin-top: 50px;
+    align-self: auto;
+}
+.cat-banner-text{
+    text-align: center;
+    font-size: 30px;
+    color: #FFA2F3;
+}
+.cat-content{
+    position: relative;
+    display: flexbox;
+    width: 100%;
+}
+.cat-left-col{
+    margin-top: 120px;
+    margin-left: 10%;
+}
+.cat-left-col img{
+    float: left;
+    width: 332px;
+    height: 332px;
+}
+.cat-left-col h2{
+    font-size: 30px;
+    color: white;
+    line-height: 320px;
+    float: left;
+    margin-left: 20px;
+}
+.cat-right-col{
+    float: right;
+    margin-right: 10%;
+    margin-top: 120px;
+    display: flex;
+    align-items: center;
+}
+.cat-right-col p{
+    font-size: 18px;
+    color: #5f5f5f;
+    font-weight: 400;
+    margin-right: 15px;
+}
+
+.right-half{
+    display: flex;
+    padding-top: 25%;
+    padding-left: 20%;
+    margin-bottom: 50px;
+}
+
+.right-half img{
+    float: right;
+    width: 500px;
+    height: 500px;
+}
+.right-half-HFOD2{
+    display: flex;
+    padding-top: 25%;
+    padding-left: 26%;
+    margin-bottom: 50px;
+}
+.right-half-HFOD2 img{
+    float: right;
+    margin-right: -50px;
+    width: 500px;
+    height: 300px;
+}
+/* play pause button */
+#play-icon1{
+    width: 80px;
+    cursor: pointer;
+}
+#play-icon2{
+    width: 80px;
+    cursor: pointer;
+}
+#play-icon3{
+    width: 80px;
+    cursor: pointer;
+}
+
+/* Responsive screen - Catalogue */
+@media (max-width:952px){
+    .cat-left-col{
+        width:100%
+    }
+    .cat-right-col{
+        width: 100%;
+    }
+    .right-half{
+        width: 100%;
     }
 }
