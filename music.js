@@ -35,3 +35,20 @@ playicon3.onclick = function(){
         playicon3.src = "Images/play.png"
     }
 }
+
+// reveal elements when scroll
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        console.log(entry)
+        if (entry.isIntersecting){
+            entry.target.classList.add('show'); //shows element when meant to be visible
+        }
+        else{
+            entry.target.classList.remove('show');
+        }
+    });
+});
+
+const hiddenElements = document.querySelectorAll('.hidden');
+hiddenElements.forEach((el) => observer.observe(el));
