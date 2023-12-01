@@ -61,7 +61,7 @@ p{
 }
 body{
     /*background-color: #000966;*/
-    background-image: url("C:/Ngee Ann Poly/Sem 1.2/FED/FED_Assignment1/FEDAssignment1/Images/Sky wallpaper.jpg");
+    background-image: url("Images/Sky wallpaper.jpg");
 }
 
 .buybutton{
@@ -150,11 +150,13 @@ footer{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: black;
     padding: 70px 0;
-    bottom: 0;
 }
 .footcontainer{
     max-width: 1170px;
     margin: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 .foot-col h4{
     font-size: 18px;
@@ -510,14 +512,15 @@ footer{
 .sidebar{
     display: flexbox;
     position: fixed;
-    inset: 0 -700px 0 auto;
+    inset: auto -700px auto auto;
     transform: translateX(0);
     transition: all 0.5s;
 }
 body.showcart .sidebar{
-    inset: 0 -300px 0 auto;
+    inset: auto -300px auto auto;
     transform: translateX(-300px);
     transition: all 0.5s;
+    position: fixed;
 }
 /* Close and checkout button */
 .sidebar .cartbtn{
@@ -601,9 +604,10 @@ body.showcart .sidebar{
 }
 .cat-content{
     position: relative;
-    display: flexbox;
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     padding-bottom: 20%;
 }
 .cat-left-col{
@@ -613,8 +617,8 @@ body.showcart .sidebar{
 }
 .cat-left-col img{
     float: left;
-    width: 332px;
-    height: 332px;
+    max-width: 332px;
+    max-height: 332px;
 }
 .cat-left-col h2{
     font-size: 30px;
@@ -625,7 +629,7 @@ body.showcart .sidebar{
 }
 .cat-right-col{
     margin-right: 10%;
-    margin-bottom: 200px;
+    margin-bottom: 50px;
 }
 .cat-right-col p{
     float: right;
@@ -641,7 +645,18 @@ body.showcart .sidebar{
     font-weight: 400;
     margin-right: 15px;
 }
-
+.cat-right-col .catImage{
+    float: left;
+    margin-left: 11%;
+    width: 332px;
+    height: 332px;
+}
+.cat-right-col .catImage2{
+    float: left;
+    margin-left: 11%;
+    width: 500px;
+    height: 300px;
+}
 /* play pause button */
 #play-icon1{
     float: right;
@@ -659,13 +674,11 @@ body.showcart .sidebar{
     cursor: pointer;
 }
 /* Responsive screen - Catalogue */
-@media (max-width:642px){
+@media (max-width:590px){
     .cat-left-col img{
-        align-content: center;
-        flex-direction: column;
+        height: auto;
     }
-    .cat-right-col{
-        width: 100%;
-        flex-direction: column;
+    .cat-right-col img{
+        height: auto;
     }
 }
