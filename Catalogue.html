@@ -1,35 +1,36 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8" />
-    <title>Catalogue</title>
-     <!--CSS style sheets-->
-  <link rel="stylesheet" href="style.css" type="text/css">
-  <!-- For Social media Icons-->
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-  <!-- For Menu Bar Icon -->
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-  <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script> <!--Trash can icon-->
+  <head>
+      <meta charset="UTF-8" />
+      <title>Catalogue</title>
+      <!--CSS style sheets-->
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="normalize.css" type="text/css">
+    <!-- For Social media Icons-->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- For Menu Bar Icon -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script> <!--Trash can icon-->
 
 
-</head>
-<header>
-    <img src="C:\Ngee Ann Poly\Sem 1.2\FED\FED_Assignment1\FEDAssignment1\Images\Coldplay logo.png" alt = "logo" class = "logo" height="50" width="300">
-  <nav class="fixnavbar">
-    <input type="checkbox" id="check">
-    <label for="check" class="checkbtn">
-      <i class="fas fa-bars"></i>
-    </label>
-    <ul>
-        <li><a href="Catalogue.html">Catalogue</a></li>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="#">Tours</a></li>
-        <li><a href="Merchandise.html">Merchandise</a></li>
-    </ul>
-  </nav>
-</header>
+  </head>
+  <header>
+      <img src="Images/Coldplay logo.png" alt = "logo" class = "logo" height="50" width="300">
+    <nav class="fixnavbar">
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <ul>
+          <li><a href="Catalogue.html">Catalogue</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Tours.html">Tours</a></li>
+          <li><a href="Merchandise.html">Merchandise</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<!--Banner-->
+  <!--Banner-->
 <body>
     <div class="banner-container">
         <div class="banner-catalogue"></div>
@@ -38,58 +39,60 @@
 </body>
 
 
-<!--Music-->
+  <!--Music-->
 
 <body>
     <section class="cat-content">
         <div class="cat-left-col">
-            <img src="Images/AHeadFullOfDreams.jpg" alt="HFOD">
-            <h2> Head Full Of Dreams </h2>
+            <img src="Images/AHeadFullOfDreams.jpg" alt="HFOD" class="hidden">
+            <h2 class="hidden"> Head Full Of Dreams </h2>
         </div>
         <div class="cat-right-col">
+            <img src="Images/HFOD.jpg" class="catImage" alt="">
             <a> Head full of Dreams <br> Birds <br> Hymn For The Weekend <br> Everglow <br> Adventure of a Lifetime <br> Fun <br> Kaleidoscope <br> Army Of One </a>
             <p> Listen here </p>
-            <img src="Images/play.png" id="play-icon1">
+            <img src="Images/play.png" id="play-icon1" alt="">
         </div>
 
         
         <div class="cat-left-col">
-            <img src="Images/GhostStories.jpg" alt="GhostStories">
-            <h2> Ghost Stories </h2>
+            <img src="Images/GhostStories.jpg" alt="GhostStories" class="hidden">
+            <h2 class="hidden"> Ghost Stories </h2>
         </div>
         <div class="cat-right-col">
-            <a> Head full of Dreams <br> Birds <br> Hymn For The Weekend <br> Everglow <br> Adventure of a Lifetime <br> Fun <br> Kaleidoscope <br> Army Of One </a>
+            <img src="Images/HFOD2.jpg" class="catImage2" alt="">
+            <a> Always In My Head <br> Magic <br> Ink <br> True Love <br> Midnight <br> Another's Arms <br> Oceans <br> A Sky Full Of Stars </a>
             <p> Listen here </p>
-            <img src="Images/play.png" id="play-icon2">
+            <img src="Images/play.png" id="play-icon2" alt="">
         </div>
 
         <div class="cat-left-col">
-            <img src="Images/mylo_xyloto.jpg" alt="HFOD">
-            <h2> Mylo Xyloto </h2>
+            <img src="Images/mylo_xyloto.jpg" alt="HFOD" class="hidden">
+            <h2 class="hidden"> Mylo Xyloto </h2>
         </div>
         <div class="cat-right-col">
-            <a> Head full of Dreams <br> Birds <br> Hymn For The Weekend <br> Everglow <br> Adventure of a Lifetime <br> Fun <br> Kaleidoscope <br> Army Of One </a>
+            <img src="Images/HFOD3.jpg" class="catImage" alt="">         
+            <a> Mylo Xyloto <br> Hurts Like Heaven <br> Paradise <br> Charlie Brown <br> Us Against The World <br> M.M.I.X <br> Every Teardrop Is A Waterfall <br> Major Minus </a>
             <p> Listen here </p>
-            <img src="Images/play.png" id="play-icon3">
+            <img src="Images/play.png" id="play-icon3" alt="">
         </div>
     </section>
 
     <!--Audios-->
     <audio id="HFODmusic">
-        <source src="Images/A Head Full of Dreams.mp3" type="audio/mp3">
+        <source src="Images/AHeadFullofDreams.mp3" type="audio/mp3">
     </audio>
     <audio id="GSmusic">
-        <source src="Images/A Sky Full of Stars.mp3" type="audio/mp3">
+        <source src="Images/ASkyFullofStars.mp3" type="audio/mp3">
     </audio>
     <audio id="MXmusic">
-        <source src="Images/Coldplay - Hurts Like Heaven.mp3" type="audio/mp3">
+        <source src="Images/Coldplay-HurtsLikeHeaven.mp3" type="audio/mp3">
     </audio>
 
 
 
     <script src="music.js"></script>
 </body>
-
 
 
 
@@ -115,4 +118,5 @@
       </div>
     </div>
 </footer>
+
 </html>
