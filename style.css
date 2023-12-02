@@ -70,9 +70,12 @@ body{
     margin-bottom: 10%;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 20px;
 }
 .viewbutton a{
     text-decoration: none;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
 }
 .viewbutton a:hover{
     color: white;
@@ -696,99 +699,75 @@ body.showcart .sidebar{
 
 /* Tours */
 .tourlist{
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0px 10px 20px rgb(214, 213, 213);
     display: flex;
-    max-width: 100%;
-    overflow: hidden;
-    width: 70%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-}
-.tourlist h4{
-    opacity: 0.6;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-}
-.tourlist h2{
-    margin: 10px 0;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+    text-align: center;
 }
 .tourname{
+    width: 325px;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 10px 20px white;
+    margin: 100px;
+    color: #FFA2F3;
+}
+.tourheadbg{
     background: black;
     color: #FFA2F3;
-    padding: 30px;
-    width: 250px;
-    position: relative;
+    border-radius: 4px
 }
-.tourname a{
-    color: #FFA2F3;
-    font-size: 12px;
-    opacity: 0.6;
-    margin-top: 30px;
-    text-decoration: none;
-
-}
-
-
 .tourinfo{
-    padding: 30px;
-    position: relative;
-    width: 100%;
+    padding: 16px;
+}
+.tourinfo h4{
+    margin-bottom: 8px;
 }
 .tourinfo p{
-    font-size: 20px;
-    font-weight: bold;
-    color: #FFA2F3;
+    color: black;
+}
+/* button */
+.tourinfo .tourbtn{
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #333;
+    text-decoration: none;
+    border-radius: 20px;
+    margin-top: 16px;
+    color: white;
+    cursor: pointer;
+}
+.card-btn:hover{
+    background-color: white;
+    color:#333;
 }
 
-/* button */
-.tourbtn{
-    background: #FFA2F3;
-    border: 1px solid transparent;
-    box-shadow: 0px 5px 10px rgb(0, 0, 0.2);
-    color: white;
-    font-size: 16px;
-    padding: 10px 20px;
-    position: absolute;
-    bottom: 20px;
-    right: 30px;
-    border-radius: 20px;
-    cursor: pointer;
-    transition: all 0.5s ease;
-    font-weight: bold;
-}
-.tourbtn:hover{
-    background: black;
-    color: #FFA2F3;
-}
 
 /* Responsive screen - Tours */
 @media (max-width:768px){
     .tourlist{
-        flex-direction: column;
-        width: 50%;
-    }
-    .tourname{
         width: 100%;
     }
-    .tourname h2{
-        margin: 10px 0 0;
-    }
-    .tourname a{
-        margin-top: 10px;
-    }
-    .tourinfo h2{
-        margin-top: 20px;
-    }
-    .tourinfo p{
-        margin-bottom: 50px;
-    }
-    .tourbtn{
-        padding: 10px 15px;
-        float: right;
-        font-size: 14px;
-    }
+}
+
+/* Tour filtering */
+.filterbtn a{
+    text-decoration: none;
+    color: #FFA2F3;
+}
+.filterbtn{
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    padding: 12px 16px;
+    background-color: black;
+    color: #FFA2F3;
+    cursor: pointer;
+}
+.filterbtn:hover{
+    background-color: whitesmoke;
+    color: #FFA2F3;
 }
