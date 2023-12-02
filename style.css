@@ -64,14 +64,17 @@ body{
     background-image: url("Images/Sky wallpaper.jpg");
 }
 
-.buybutton{
+.viewbutton{
     background-color:palevioletred;
     display: block;
     margin-bottom: 10%;
     margin-left: auto;
     margin-right: auto;
 }
-.buybutton a:hover{
+.viewbutton a{
+    text-decoration: none;
+}
+.viewbutton a:hover{
     color: white;
 }
 /* header */
@@ -383,6 +386,12 @@ footer{
     border-radius: 20px;
     border: none;
     cursor: pointer;
+}
+#bannerbtn a{
+    text-decoration: none;
+}
+#bannerbtn a:hover{
+    color: #FFA2F3;
 }
 #bannerbtn:hover{
     background-color: black;
