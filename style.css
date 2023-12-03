@@ -4,6 +4,7 @@
     margin: 0;
     box-sizing: border-box;
 }
+/* reveal animation */
 .hidden{
     opacity: 0;
     filter: blur(5px);
@@ -63,7 +64,7 @@ body{
     /*background-color: #000966;*/
     background-image: url("Images/Sky wallpaper.jpg");
 }
-
+/* view album button */
 .viewbutton{
     background-color:palevioletred;
     display: block;
@@ -82,7 +83,7 @@ body{
 }
 /* header */
 header{
-    padding-left: 10%;
+    padding-left: 10%; /* center elements near the middle */
     margin-bottom: 70px;
 }
 .fixnavbar{
@@ -93,13 +94,13 @@ header{
 }
 ul{
     color: white;
-    list-style: none;
+    list-style: none; /* removes bullet points on list */
 }
 nav{
     font-size: larger;
     font-family: 'Work Sans',sans-serif;
     text-align: center;
-    z-index: 100;
+    z-index: 100; /* ensures navbar does not get hidden behind other elements in the page when scrolling */
 }
 nav ul{
     margin: 0;
@@ -138,6 +139,7 @@ nav a::before{
 nav a:hover::before{
     width: 100%;
 }
+/* menu icon when screen is shrinked */
 .checkbtn{
     font-size: 30px;
     color: white;
@@ -162,7 +164,7 @@ footer{
     margin: auto;
     bottom: 0;
     left: 0;
-    right: 0;
+    right: 0; /* ensure footer is positioned to the bottom */
 }
 .foot-col h4{
     font-size: 18px;
@@ -211,7 +213,7 @@ footer{
     display: inline-block;
     height: 40px;
     width: 40px;
-    background-color: (255,255,255,0.2);
+    background-color: rgb(255,255,255,0.2);
     margin: 0 10px 10px 0;
     text-align: center;
     line-height: 40px;
@@ -348,7 +350,6 @@ footer{
     width: 100%;
     height: 50vh;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    display: flexbox;
 }
 .banner{
     width: 100%;
@@ -361,7 +362,6 @@ footer{
     align-self: auto;
 }
 .banner-text{
-    display: flexbox;
     padding-top: 50px;
     margin-left: 50px;
     
@@ -378,7 +378,6 @@ footer{
     color: #FFA2F3;
 }
 #bannerbtn{
-    display: flexbox;
     width: 130px;
     height: 35px;
     font-weight: bold;
@@ -391,7 +390,7 @@ footer{
     cursor: pointer;
 }
 #bannerbtn a{
-    text-decoration: none;
+    text-decoration: none; /* removes line under hyperlink */
 }
 #bannerbtn a:hover{
     color: #FFA2F3;
@@ -442,12 +441,12 @@ footer{
 
 /* List */
 #root{
-    width: 80%;
+    width: 80%; /* adjust size of each box and the space between them */
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
 }
-.sidebar{
+.sidebar{ /*cart list*/
     width: 40%;
     border-radius: 5px;
     background-color: white;
@@ -473,7 +472,6 @@ footer{
     border-top: 1px solid #333;
 }
 .box{
-    display: flexbox;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
@@ -522,7 +520,6 @@ footer{
 }
 /* hide sidebar */
 .sidebar{
-    display: flexbox;
     position: fixed;
     inset: auto -700px auto auto;
     transform: translateX(0);
@@ -548,7 +545,7 @@ body.showcart .sidebar{
 .sidebar .cartbtn .close{
     background-color: #aaa;
 }
-/* Js */
+/* for shop.js */
 .cart-item{
     display: flex;
     align-items: center;
@@ -592,7 +589,7 @@ body.showcart .sidebar{
         text-align: center;
     }
     #root{
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(1,1fr); /* at a certain screen width, there will only be 1 box in a row instead of 2 */
     }
 }
 
@@ -614,7 +611,7 @@ body.showcart .sidebar{
     font-size: 30px;
     color: #FFA2F3;
 }
-.cat-content{
+.cat-content{ /* Positions all the images and play button */
     position: relative;
     display: flex;
     flex-direction: column;
@@ -625,7 +622,7 @@ body.showcart .sidebar{
 .cat-left-col{
     margin-top: 150px;
     margin-left: 10%;
-    padding-bottom: 10%;
+    padding-bottom: 10%; /* Create space at the bottom so next img don't overlap */
 }
 .cat-left-col img{
     float: left;
@@ -698,13 +695,14 @@ body.showcart .sidebar{
 
 
 /* Tours */
-.tourlist{
+.tourlist{  /* Align all cards to center */
     display: flex;
     align-items: center;
     flex-direction: column;
     margin-top: 100px;
     text-align: center;
 }
+/* tour cards */
 .tourname{
     width: 325px;
     background-color: white;
@@ -752,7 +750,7 @@ body.showcart .sidebar{
     }
 }
 
-/* Tour filtering */
+/* Tour filtering by country */
 .filterbtn a{
     text-decoration: none;
     color: #FFA2F3;
