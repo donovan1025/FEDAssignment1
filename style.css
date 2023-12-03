@@ -45,7 +45,7 @@ p{
     padding-top: 2cm;
     width: 100%;
     height: 100%;
-    background-image: url("Images/Sky wallpaper.jpg");
+    background-image: url("Images/Skywallpaper.jpg");
     display: flex;
     align-items: center;
     justify-content: center;
@@ -62,7 +62,7 @@ p{
 }
 body{
     /*background-color: #000966;*/
-    background-image: url("Images/Sky wallpaper.jpg");
+    background-image: url("Images/Skywallpaper.jpg");
 }
 /* view album button */
 .viewbutton{
